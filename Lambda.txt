@@ -1,0 +1,12 @@
+- Lambda
+ 함수 이름 없이, 함수처럼 쓸 수 있는 익명함수
+ 수학의 람다 대수에서 유래
+
+- Map function
+ Sequence 자료형 각 element에 동일한 function을 적용
+  Sequence자료형(list, tuple)
+
+
+- Reduce function
+ map function과 달리 list에 똑같은 함수를 적용해서 통합
+ 

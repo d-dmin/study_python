@@ -1,0 +1,49 @@
+-Enumerate
+ List의 element를 추출할 때 번호를 붙여서 추출
+
+>>>for i, v in enumerate(['tic','tac','toe']):
+... print(i, v)
+
+  0 tic
+  1 tac
+  2 toe
+
+>>> mylist = ['a','b','c','d']
+>>> list(enumerate(mylist))
+
+  [(0,'a'),(1,'b'),(2,'c'),(3,'d')]
+
+>>> {i:j for i, j in enumerate('today is Wednesday'.split())}
+
+  {0:'today', 1:'is', 2: Wednesday}
+
+
+-Zip
+ 두 개의 list의 값을 병렬적으로 추출
+ >>> alist = ['a1', 'a2', 'a3']
+ >>> blist = ['b1', 'b2', 'b3', 'b4']
+ >>> for a, b in zip(alist, blist):
+ ... print(a,b)
+
+  a1 b1
+  a2 b2
+  a3 b2
+
+  >>> a,b,c = zip((1,2,3), (10,20,30), (100, 200, 300))
+
+  (1, 10, 100) (2, 20, 200) (3, 30, 300)
+
+  >>> [sum(x) for x in zip((1, 2, 3),(10,20,30),(100,200,300))]
+
+   [111, 222, 333]
+
+
+-Enumerate & zip
+>>> alist = ['a1','a2','a3']
+>>> blist = ['b1','b2','b3']
+>>> for i, (a,b) in enumerate(zip(alist, blist):
+... print(i,a,b)
+
+  0 a1 b1
+  1 a2 b2
+  2 a3 b3
